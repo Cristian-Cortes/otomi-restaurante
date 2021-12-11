@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Otomí Cocina Tradicional: Menu</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="main-body">
+
+	<!-- Header -->
+	<header class="header full-box bg-white">
+	    <div class="header-brand full-box">
+	        <a href="index.html">
+	            <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+	            <ul class="list-unstyled full-box" >
+	                <li>
+	                    <a href="index.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="menu.html" >Menú</a>
+	                </li>
+	                <li>
+	                    <a href="registration.html" >Regístrate</a>
+	                </li>
+	                <li>
+	                    <a href="signin.html" >Login</a>
+	                </li>
+	            </ul>
+	        </nav>
+
+	        <div class="header-button full-box text-center" id="userMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nombre de usuario" >
+	            <i class="fas fa-user-circle"></i>
+	        </div>
+	        <div class="dropdown-menu div-bordered popup-login" aria-labelledby="userMenu">
+	            <p class="text-center" style="padding-top: 10px;">
+	                <i class="fas fa-user-circle fa-3x"></i><br>
+	                <small>Cuenta de usuario</small>
+	            </p>
+	            <a class="dropdown-item" href="signin.html">
+	                <i class="far fa-address-card"></i> &nbsp; Iniciar sesión
+	            </a>
+	        </div>
+
+	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
+	            <i class="fas fa-bars"></i>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="container container-web-page">
+	    <h3 class="font-weight-bold poppins-regular text-uppercase">Menú de platillos</h3>
+	    <p class="text-justify">Bienvenido al menú de platillos, acá encontrara todos los platillos disponibles Otomí Cocina Tradicional.</p>
+
+	    <div class="container-fluid" style="border-top: 1px solid #E1E1E1; padding: 20px; 0">
+	        <div class="row align-items-center">
+	            <div class="col-12 col-sm-4 text-center text-sm-start">
+	                <div class="dropdown">
+	                    <button class="btn btn-link dropdown-toggle" type="button" id="categorySubMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                        <i class="fas fa-hamburger fa-fw"></i> &nbsp; Menú
+	                    </button>
+	                    <div class="dropdown-menu" aria-labelledby="categorySubMenu">
+	                        <a class="dropdown-item" href="menu.html">Carnes y Caldos</a>
+	                        <a class="dropdown-item" href="menu2.html">Gorditas y Antojitos</a>
+	                        <a class="dropdown-item" href="menu3.html">Bebidas</a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+
+	    <div class="container-fluid" style="padding: 20px 0;">
+	        <div class="row">
+	            <div class="col-12 col-md-8">
+	                <p class="text-left lead"> &nbsp; Platillos principales: <span class="font-weight-bold poppins-regular text-uppercase">Carnes y caldos</span></p>
+	            </div>
+	        </div>
+	    </div>
+
+
+	    <div class="container-cards full-box" style="padding-bottom: 40px;">
+
+	      <div class="card-product div-bordered bg-white shadow-2">
+	          <figure class="card-product-img">
+	              <img class="img-fluid" src="./assets/platillos/barbabcoa.jpg" alt="nombre_platillo">
+	          </figure>
+	          <div class="card-product-body">
+	              <div class="card-product-content">
+	                  <h5 class="text-center fw-bolder">Barbacoa de borrego estilo Otomí</h5>
+	                  <p class="card-product-price text-center fw-bolder">$480.00 /Kg</p>
+	                  <span class="full-box text-center text-muted" style="display: block;">Incluye salsas, complementos y tortillas</span>
+	              </div>
+	              <div class="text-center card-product-options" style="padding: 10px 0;">
+	                  &nbsp; &nbsp;
+	                  <a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+	                  &nbsp; &nbsp;
+	              </div>
+	          </div>
+	      </div>
+
+	      <div class="card-product div-bordered bg-white shadow-2">
+	          <figure class="card-product-img">
+	              <img class="img-fluid" src="./assets/platillos/barba_pollo.jpg" alt="nombre_platillo">
+	          </figure>
+	          <div class="card-product-body">
+	              <div class="card-product-content">
+	                  <h5 class="text-center fw-bolder">Barbacoa de pollo estilo Otomí</h5>
+	                  <p class="card-product-price text-center fw-bolder">$250.00 /pollo</p>
+	                  <span class="full-box text-center text-muted" style="display: block;">Incluye salsas, complementos y tortillas</span>
+	              </div>
+	              <div class="text-center card-product-options" style="padding: 10px 0;">
+	                  &nbsp; &nbsp;
+	                  <a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+	                  &nbsp; &nbsp;
+	              </div>
+	          </div>
+	      </div>
+
+	      <div class="card-product div-bordered bg-white shadow-2">
+	          <figure class="card-product-img">
+	              <img class="img-fluid" src="./assets/platillos/tacos.jpeg" alt="nombre_platillo">
+	          </figure>
+	          <div class="card-product-body">
+	              <div class="card-product-content">
+	                  <h5 class="text-center fw-bolder">Tacos de panza de borrego estilo Otomí</h5>
+	                  <p class="card-product-price text-center fw-bolder">$35.00 /Taco</p>
+	                  <span class="full-box text-center text-muted" style="display: block;">Incluye complementos</span>
+	              </div>
+	              <div class="text-center card-product-options" style="padding: 10px 0;">
+	                  &nbsp; &nbsp;
+	                  <a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+	                  &nbsp; &nbsp;
+	              </div>
+	          </div>
+	      </div>
+
+	      <div class="card-product div-bordered bg-white shadow-2">
+	          <figure class="card-product-img">
+	              <img class="img-fluid" src="./assets/platillos/consome.jpg" alt="nombre_platillo">
+	          </figure>
+	          <div class="card-product-body">
+	              <div class="card-product-content">
+	                  <h5 class="text-center fw-bolder">Consomé de borrego estilo Otomí</h5>
+	                  <p class="card-product-price text-center fw-bolder">$40.00 /Plato</p>
+	                  <span class="full-box text-center text-muted" style="display: block;">Incluye tortillas</span>
+	              </div>
+	              <div class="text-center card-product-options" style="padding: 10px 0;">
+	                  &nbsp; &nbsp;
+	                  <a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+	                  &nbsp; &nbsp;
+	              </div>
+	          </div>
+	      </div>
+
+	      <div class="card-product div-bordered bg-white shadow-2">
+	          <figure class="card-product-img">
+	              <img class="img-fluid" src="./assets/platillos/fritanga.jpg" alt="nombre_platillo">
+	          </figure>
+	          <div class="card-product-body">
+	              <div class="card-product-content">
+	                  <h5 class="text-center fw-bolder">Fritanga de borrego estilo Otomí</h5>
+	                  <p class="card-product-price text-center fw-bolder">$50.00 /Plato</p>
+	                  <span class="full-box text-center text-muted" style="display: block;">Incluye tortillas</span>
+	              </div>
+	              <div class="text-center card-product-options" style="padding: 10px 0;">
+	                  &nbsp; &nbsp;
+	                  <a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+	                  &nbsp; &nbsp;
+	              </div>
+	          </div>
+	      </div>
+
+	      <div class="card-product div-bordered bg-white shadow-2">
+	          <figure class="card-product-img">
+	              <img class="img-fluid" src="./assets/platillos/panza.jpg" alt="nombre_platillo">
+	          </figure>
+	          <div class="card-product-body">
+	              <div class="card-product-content">
+	                  <h5 class="text-center fw-bolder">Consomé de panza de borrego estilo Otomí</h5>
+	                  <p class="card-product-price text-center fw-bolder">$50.00 /Plato</p>
+	                  <span class="full-box text-center text-muted" style="display: block;">Incluye tortillas</span>
+	              </div>
+	              <div class="text-center card-product-options" style="padding: 10px 0;">
+	                  &nbsp; &nbsp;
+	                  <a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+	                  &nbsp; &nbsp;
+	              </div>
+	          </div>
+	      </div>
+
+	    </div>
+
+	</div>
+	
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> Otomí Cocina Tradicional 2021</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Patria Nueva</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Patria Nueva, Hidalgo, Mexico</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="#" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="#" class="footer-link" target="_blank" >
+	                            <i class="fab fa-youtube fa-fw"></i>
+	                                Youtube
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+	
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>
